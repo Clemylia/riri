@@ -2,11 +2,11 @@
 
 # --- 1. Chemin du Fichier GGUF (À adapter) ---
 # Remplacez ceci par le chemin réel de votre fichier GGUF
-FROM hf.co/mradermacher/Tiny-charlotte-GGUF 
+FROM hf.co/mradermacher/LAM-4-ZERO-F-GGUF 
 
 # --- 2. Paramètres de Génération pour l'Inférénce ---
 # Ajustements pour la stabilité (légèrement plus bas pour un modèle from scratch)
-PARAMETER temperature 0.8
+PARAMETER temperature 0.7
 PARAMETER top_p 0.9 
 PARAMETER top_k 40 
 PARAMETER num_predict 256
